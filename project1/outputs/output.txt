@@ -1,0 +1,61 @@
+Choose Option:
+1. FCFS
+2. RR
+3. Exit
+Enter your choice: 1
+Enter the numnber of processes: 5
+Enter the process ids: 1 2 3 4 5
+Enter the arrival times: 0 1 2 3 6
+Enter the burst times: 10 1 2 1 5
+--------------------------------------------------
+PID     AT      BT      CT      TAT     WT      RT
+--------------------------------------------------
+1       0       10      10      10      0       0
+2       1       1       11      10      9       9
+3       2       2       13      11      9       9
+4       3       1       14      11      10      10
+5       6       5       19      13      8       8
+--------------------------------------------------
+Avg. Turn-around time = 11.000000
+Avg. Waiting Time = 7.200000
+Avg. Response Time = 7.200000
+Gantt Chart:
+--------------------------------------------------
+1       |2      |3      |4      |5      |
+--------------------------------------------------
+t=0     10       11      13      14      
+
+Choose Option:
+1. FCFS
+2. RR
+3. Exit
+Enter your choice: 2
+Enter the numnber of processes: 5
+Enter the time quantum: 4
+Enter the process ids: 1 2 3 4 5
+Enter the arrival times: 0 1 2 3 6
+Enter the burst times: 10 1 2 1 5
+--------------------------------------------------
+PID     AT      BT      CT      TAT     WT      RT
+--------------------------------------------------
+1       0       10      18      18      8       0
+2       1       1       5       4       3       17
+3       2       2       7       5       3       3
+4       3       1       8       5       4       4
+5       6       5       19      13      8       2
+--------------------------------------------------
+Avg. Turn-around time = 9.000000
+Avg. Waiting Time = 5.200000
+Avg. Response Time = 5.200000
+Gantt Chart:
+--------------------------------------------------
+1       |2      |3      |4      |1      |5      |1      |5      |
+--------------------------------------------------
+t=0     4        5       7       8       12      16      18      19      
+
+Choose Option:
+1. FCFS
+2. RR
+3. Exit
+Enter your choice: 3
+Exiting.
