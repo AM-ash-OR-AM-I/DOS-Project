@@ -42,7 +42,6 @@ int main() {
   display_all_info(bankers);
   if (!calculate_safe_sequence(bankers)) {
     printf("Safe state not possible!\n");
-    display_safe_seq(bankers);
   } else {
     printf("System is in safe state\n");
     display_safe_seq(bankers);
@@ -138,10 +137,7 @@ int calculate_safe_sequence(bankers *bankers) {
       process_list[i]->completed = 1;
       for (int j = 0; j < n_resource; j++) {
         bankers->available_vector[j] += process_list[i]->alloted[j];
-        // process_list[i]->need[j] = 0;
-        // process_list[i]->alloted[j] = 0;
       }
-      // display_vectors(n_resource, bankers);
       safe_seq[++index] = i + 1;
       i = 0; // Reset & scan from beg
     }

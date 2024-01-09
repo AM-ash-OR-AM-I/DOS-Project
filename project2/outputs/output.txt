@@ -1,0 +1,43 @@
+Enter number of process: 5
+Enter number of resources: 4
+Enter the instances available for R1,R2...: 6 7 12 12 
+Enter the Allocation matrix:
+0 0 1 2
+2 0 0 0
+0 0 3 4
+2 3 5 4
+0 3 3 2
+Enter the Claim matrix:
+0 0 1 2
+2 7 5 0
+6 6 5 6
+4 3 5 6
+0 6 5 2
+PID     ALLOCATION
+1       0 0 1 2 
+2       2 0 0 0 
+3       0 0 3 4 
+4       2 3 5 4 
+5       0 3 3 2 
+
+PID     CLAIM
+1       0 0 1 2 
+2       2 7 5 0 
+3       6 6 5 6 
+4       4 3 5 6 
+5       0 6 5 2 
+
+PID     NEED
+1       0 0 0 0 
+2       0 7 5 0 
+3       6 6 2 2 
+4       2 0 0 2 
+5       0 3 2 0 
+
+Resource Vector:
+6 | 7 | 12 | 12 | 
+Available Vector:
+2 | 4 | 3 | 2 | 
+System is in safe state
+Safe Sequence:
+1 | 4 | 2 | 3 | 5 | ⏎ 

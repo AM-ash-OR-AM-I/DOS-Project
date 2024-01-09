@@ -17,3 +17,11 @@
 - ![result](./project1/outputs/output.png)
 
 ## Banker's Algorithm (Project 2)
+
+- [Code](./project2/bankers_algorithm.c)
+- ![result](./project2/outputs/code_output.png)
+
+### Result
+
+- [Result](./project2/outputs/output.txt)
+![result](./project2/outputs/output.png)
