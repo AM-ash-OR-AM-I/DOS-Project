@@ -1,3 +1,4 @@
+#include "rr.h"
 #include "inputs.h"
 #include "process.h"
 #include "queue.c"
@@ -5,21 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-
-typedef struct rr {
-  int no_of_processes;
-  int time_quantum;
-  Process *processes;
-  Queue *queue;
-  int *gantt_chart;
-  int *timestamps;
-  int context_switches;
-  double avg_tat_time;
-  double avg_wt_time;
-  double avg_rt_time;
-} RR;
-
-void divider_rr();
 
 void get_inputs_rr(RR *rr, int n) {
   int process_ids[n], arrival_times[n], burst_times[n];

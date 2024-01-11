@@ -1,4 +1,5 @@
 // #include "fcfs.h"
+#include "fcfs.h"
 #include "inputs.h"
 #include "process.h"
 #include <stdio.h>
@@ -6,14 +7,6 @@
 #include <string.h>
 
 int chars = 50;
-
-typedef struct fcfs {
-  int no_of_processes;
-  Process *processes;
-  double avg_tat_time;
-  double avg_wt_time;
-  double avg_rt_time;
-} FCFS;
 
 void get_inputs(FCFS *fcfs, int n) {
   int process_ids[n], arrival_times[n], burst_times[n];
@@ -86,10 +79,6 @@ void calculate_rt(FCFS *fcfs) {
   }
   fcfs->avg_rt_time = sum_rt / n;
 }
-
-void divider();
-void display_table(FCFS *fcfs, Process *processes);
-void display_gantt(FCFS *fcfs);
 
 void display(FCFS *fcfs) {
   divider();
